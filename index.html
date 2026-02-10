@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Pager</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      /* 🔁 CHANGE THESE ONLY */
+      --page-bg: #f4f4f4;
+      --hero-image: url("ebong_logo.png");
+      --text-dark: #222;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background-color: var(--page-bg);
+      overflow: hidden; /* 🚫 NO SCROLL */
+    }
+
+    .wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+
+    /* ================= HERO ================= */
+    .hero {
+        width: 100%;
+        flex: 0 0 auto;
+        height: 70vh;
+
+        background-image:
+            
+            var(--hero-image);
+
+        background-size: contain;     /* ✅ NO CROPPING */
+        background-position: center;
+        background-repeat: no-repeat;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero h1 {
+      color: white;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 600;
+      padding: 0 16px;
+    }
+
+    /* ================= FOOTER ================= */
+    footer {
+        margin-top: 20px; /* ✅ exactly 20px gap */
+        text-align: center;
+    }
+
+
+    .socials {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      margin-bottom: 12px;
+    }
+
+    .socials a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-dark);
+      text-decoration: none;
+      transition: 0.25s ease;
+    }
+
+    .socials a:hover {
+      background: #000;
+      color: #fff;
+      border-color: #000;
+    }
+
+    .copyright {
+      font-size: 0.8rem;
+      color: #666;
+    }
+
+    /* ================= MOBILE OPTIMIZATION ================= */
+    @media (max-height: 700px) {
+    .hero {
+        height: 65vh;
+        }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <!-- HERO -->
+    <section class="hero">
+      <!-- ✏️ CHANGE HEADLINE -->
+      
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <!-- ✏️ CHANGE SOCIAL LINKS -->
+      <div class="socials">
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <!-- <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
+        <!-- <a href="mailto:hello@example.com"><i class="fas fa-envelope"></i></a> -->
+      </div>
+
+      <!-- ✏️ CHANGE COPYRIGHT -->
+      <div class="copyright">
+        © 2026 ❤️ Ebong 
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
+
