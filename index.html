@@ -106,6 +106,27 @@
       color: #666;
     }
 
+  .footer-links {
+  margin-top: 12px;          /* space above */
+  display: flex;
+  justify-content: center;
+  gap: 24px;                 /* space between Shop & Contact */
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--text-dark);   /* matches your theme */
+  font-size: 0.9rem;
+  transition: 0.2s ease;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.footer-links a:hover {
+  opacity: 0.6;              /* subtle minimal hover */
+}
+
     /* ================= MOBILE OPTIMIZATION ================= */
     @media (max-height: 700px) {
     .hero {
@@ -139,9 +160,9 @@
       <!-- ✏️ CHANGE COPYRIGHT -->
       <div class="copyright">
         © 2026 ❤️ Ebong 
-        <div>
-          <a href=# target="_blank">Shop</a>
-          <a href=# target="_blank">Contact</a>
+        <div class="footer-links">
+            <a href="#" target="_blank">Shop</a>
+            <a href="#" target="_blank">Contact</a>
         </div>
       </div>
 
@@ -152,6 +173,7 @@
 
 </body>
 </html>
+
 
 
 
